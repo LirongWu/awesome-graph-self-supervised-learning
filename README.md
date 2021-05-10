@@ -296,7 +296,7 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 | DGI                                          |          Node           | Node Classification (Acc, Micro-F1)                          |             Cora, Citeseer, Pubmed, Reddit, PPI              |
 | HDMI                                         |          Node           | Node Classification<br/>(Micro-F1, Macro-F1)<br/>Node Clustering (NMI) |                   ACM, IMDB, DBLP, Amazon                    |
 | DMGI                                         |          Node           | Node Clustering (NMI)<br/>Node Classification (Acc)          |                   ACM, IMDB, DBLP, Amazon                    |
-| MVGRL                                        |     Node<br/>Graph      | Node Classification (Acc)<br/>Node Clustering (NMI, ARI)<br/>Graph Classification (Acc) | Cora, Citeseer, Pubmed, MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B |
+| MVGRL                                        |     Node<br/>Graph      | Node Classification (Acc)<br/>Node Clustering (NMI, ARI)<br/>Graph Classification (Acc) | Cora,&nbsp;Citeseer,&nbsp;Pubmed,&nbsp;MUTAG,&nbsp;PTC\_MR,&nbsp;IMDB-B,&nbsp;IMDB-M,&nbsp;RDT-B |
 | HDGI                                         |          Node           | Node Classification<br/>(Micro-F1, Macro-F1)<br/>Node Clustering (NMI, ARI) |                       ACM, DBLP, IMDB                        |
 | Subg-Con                                     |          Node           | Node Classification (Acc, Micro-F1)                          |         Cora, Citeseer, Pubmed, PPI, Flickr, Reddit          |
 | Cotext Prediction                            |          Graph          | Graph Classification (ROC-AUC)                               | MUTAG, PTC, PPI, BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE |
@@ -328,7 +328,7 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 | Node Clustering                              |          Node           | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | Graph Partitioning                           |          Node           | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | CAGAN                                        |          Node           | Node Classfication<br/>(Micro-F1, Macro-F1)<br/>Node Clustering<br/>(Micro-F1, Macro-F1, NMI) |                    Cora, Citeseer, Pubmed                    |
-| M3S################                          |          Node           | Node&nbsp;Classification&nbsp;(Acc)########################## |                    Cora, Citeseer, Pubmed                    |
+| M3S################                          |          Node           | Node&nbsp;Classification&nbsp;(Acc)####################      |                    Cora, Citeseer, Pubmed                    |
 | Cluster Preserving                           | Node<br/>Link<br/>Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
 
 ## A summary of Common Graph Datasets
