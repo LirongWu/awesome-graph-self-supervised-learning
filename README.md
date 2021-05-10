@@ -258,8 +258,8 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | Node Clustering                              |    Attributed    |   Predictive/ST   |                             None                             |                      Clustering                       |      P\&F/JL      | 2020 |
 | Graph Partitioning                           |    Attributed    |   Predictive/ST   |                             None                             |                     Partitioning                      |      P\&F/JL      | 2020 |
 | CAGAN                                        |    Attributed    |   Predictive/ST   |                             None                             |                      Clustering                       |        URL        | 2020 |
-| M3S                                          |    Attributed    | ##Predictive/ST## |               ##############None##############               |                ######Clustering######                 |        JL         | 2020 |
-| Cluster Preserving################           |    Attributed    |   Predictive/ST   |                             None                             |                   Clustering<br/>CE                   |       P\&F        | 2019 |
+| M3S################                          |    Attributed    | ##Predictive/ST## |                     ########None########                     |                  ####Clustering####                   |        JL         | 2020 |
+| Cluster Preserving                           |    Attributed    |   Predictive/ST   |                             None                             |                   Clustering<br/>CE                   |       P\&F        | 2019 |
 
 ## A Summary of Implementation Details
 
