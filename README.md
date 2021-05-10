@@ -201,10 +201,10 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | Node Attribute Masking                       |    Attributed    |   Generative/AE   |                      Attribute Masking                       |                          MAE                          |      P\&F/JL      | 2020 |
 | Edge Attribute Masking                       |    Attributed    |   Generative/AE   |                      Attribute Masking                       |                          MAE                          |       P\&F        | 2019 |
 | Node Attribute and<br/>Embedding Denoising   |    Attributed    |   Generative/AE   |                      Attribute Masking                       |                          MAE                          |        JL         | 2020 |
-| Adjacency Matrix Reconstruction              |    Attributed    |   Generative/AE   |           Attribute Masking<br/>Edge Perturbation            |                      MAE<br/>CE                       |        JL         | 2020 |
+| Adjacency Matrix Reconstruction              |    Attributed    |   Generative/AE   |           Attribute Masking<br/>Edge Perturbation            |                        MAE/CE                         |        JL         | 2020 |
 | Graph Bert                                   |    Attributed    |   Generative/AE   |           Attribute Masking<br/>Edge Perturbation            |                          MAE                          |       P\&F        | 2020 |
 | Pretrain-Recsys                              |    Attributed    |   Generative/AE   |                      Edge Perturbation                       |                          MAE                          |       P\&F        | 2021 |
-| GPT-GNN                                      |  Heterogeneous   |   Generative/AR   |           Attribute Masking<br/>Edge Perturbation            |                    MAE<br/>InfoNCE                    |       P\&F        | 2020 |
+| GPT-GNN                                      |  Heterogeneous   |   Generative/AR   |           Attribute Masking<br/>Edge Perturbation            |                      MAE/InfoNCE                      |       P\&F        | 2020 |
 | GraphCL                                      |    Attributed    |  Contrastive/G-G  | Attribute Masking<br/>Edge Perturbation<br/>Random Walk Sampling |                        InfoNCE                        |        URL        | 2020 |
 | IGSD                                         |    Attributed    |  Contrastive/G-G  |             Edge Perturbation<br/>Edge Doffisopm             |                        InfoNCE                        |      JL/URL       | 2020 |
 | DACL                                         |    Attributed    |  Contrastive/G-G  |                            Mixup                             |                        InfoNCE                        |        URL        | 2020 |
@@ -225,7 +225,7 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | Contrst-Reg                                  |    Attributed    |  Contrastive/L-L  |                     Attribute Shuffling                      |                        InfoNCE                        |        JL         | 2021 |
 | DGI                                          |    Attributed    |  Contrastive/L-G  |                          Arbitrary                           |                     JS Estimator                      |        URL        | 2019 |
 | HDMI                                         |    Attributed    |  Contrastive/L-G  |                     Attribute Shuffling                      |                     JS Estimator                      |        URL        | 2021 |
-| DMGI                                         |  Heterogeneous   |  Contrastive/L-G  |                     Attribute Shuffling                      |                 JS Estimator<br/>MAE                  |        URL        | 2020 |
+| DMGI                                         |  Heterogeneous   |  Contrastive/L-G  |                     Attribute Shuffling                      |                   JS Estimator/MAE                    |        URL        | 2020 |
 | MVGRL                                        |    Attributed    |  Contrastive/L-G  | Attribute Masking<br/>Edge Perturbation<br/>Edge Diffusion<br/>Random Walk Sampling | DV Estimator<br/>JS Estimator<br/>NT-Xent<br/>InfoNCE |        URL        | 2020 |
 | HDGI                                         |  Heterogeneous   |  Contrastive/L-G  |                     Attribute Shuffling                      |                     JS Estimator                      |        URL        | 2019 |
 | Subg-Con                                     |    Attributed    |  Contrastive/L-C  |                     Importance Sampling                      |                    Triplet Margin                     |        URL        | 2020 |
@@ -259,77 +259,77 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | Graph Partitioning                           |    Attributed    |   Predictive/ST   |                             None                             |                     Partitioning                      |      P\&F/JL      | 2020 |
 | CAGAN                                        |    Attributed    |   Predictive/ST   |                             None                             |                      Clustering                       |        URL        | 2020 |
 | M3S################                          |    Attributed    | ##Predictive/ST## |                     ########None########                     |                  ####Clustering####                   |        JL         | 2020 |
-| Cluster Preserving                           |    Attributed    |   Predictive/ST   |                             None                             |                   Clustering<br/>CE                   |       P\&F        | 2019 |
+| Cluster Preserving                           |    Attributed    |   Predictive/ST   |                             None                             |                     Clustering/CE                     |       P\&F        | 2019 |
 
 ## A Summary of Implementation Details
 
 About Task Level, Evaluation Metric, and Evaluation Datasets.
 
-| Methods                                  |   Task Level    | Evaluation Metric                                            |                           Dataset                            |
-| :--------------------------------------- | :-------------: | :----------------------------------------------------------- | :----------------------------------------------------------: |
-| Graph Completion                         |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| Node Attribute Masking                   |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| Edge Attribute Masking                   |      Graph      | Graph Classification (ROC-AUC)                               | MUTAG, PTC, PPI, BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE |
-| Node Attribute and Embedding Denoising   |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| Adjacency Matrix Reconstruction          |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| Graph Bert                               |      Node       | Node Classification (Acc)<br/>Node Clustering (NMI)          |                    Cora, Citeseer, Pubmed                    |
-| Pretrain-Recsys                          |    Node/Link    | -                                                            |                   ML-1M, MOOCs and Last-FM                   |
-| GPT-GNN                                  |    Node/Link    | Node Classification (F1-score)<br/>Link Prediction (ROC-AUC) |                     OAG, Amazon, Reddit                      |
-| GraphCL                                  |      Graph      | Graph Classification  (Acc, ROC-AUC)                         | NCI1, PROTEINS, D\&D, COLLAB, RDT-B, RDT-M5K, GITHUB, MNIST, CIFAR10, MUTAG, IMDB-B, BBBP, Tox21, ToxCast, SIDER, ClinTox, MUV, HIV, BACE, PPI |
-| IGSD                                     |      Graph      | Graph Classification (Acc)                                   |      MUTAG, PTC\_MR, NCI1, IMDB-B, QM9, COLLAB, IMDB-M       |
-| DACL                                     |      Graph      | Graph Classification (Acc)                                   |        MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B, RDT-M5K        |
-| LCL                                      |      Graph      | Graph Classification (Acc)                                   |   IMDB-B, IMDB-M, COLLAB, MUTAG, PROTEINS, PTC, NCI1, D\&D   |
-| CSSL                                     |      Graph      | Graph Classification (Acc)                                   |          PROTEINS, D\&D, NCI1, NCI109, Mutagenicity          |
-| GCC                                      |   Node/Graph    | Node Classification (Acc)<br/>Graph Classification (Acc)     | US-Airport, H-index, COLLAB, IMDB-B, IMDB-M, RDT-B, RDT-M5K  |
-| GRACE                                    |      Node       | Node Classification (Acc, Micro-F1)                          |          Cora, Citeseer, Pubmed, DBLP, Reddit, PPI           |
-| GCA                                      |      Node       | Node Classification (Acc)                                    | Wiki-CS, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
-| GROC                                     |      Node       | Node Classification (Acc)                                    |        Cora, Citeseer, Pubmed, Amazon-Photo, Wiki-CS         |
-| STDGI                                    |      Node       | Node Regression (MAE, RMSE, MAPE)                            |                           METR-LA                            |
-| GMI                                      |    Node/Link    | Node Classification (Acc, Micro-F1)<br/>Link Prediction (ROC-AUC) |   Cora, Citeseer, PubMed, Reddit, PPI, BlogCatalog, Flickr   |
-| KS2L                                     |    Node/Link    | Node Classification (Acc)<br/>Link Prediction (ROC-AUC)      | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS |
-| CG3                                      |      Node       | Node Classification (Acc)                                    | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS |
-| BGRL                                     |      Node       | Node Classification (Acc, Micro-F1)                          | Wiki-CS, Amazon-Computers, Amazon-Photo, PPI, Coauthor-CS, Coauthor-Physics, ogbn-arxiv |
-| SelfGNN                                  |      Node       | Node Classification (Acc)                                    | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
-| PT-DGNN                                  |      Link       | Link Prediction (ROC-AUC)                                    |               HepPh, Math Overflow, Super User               |
-| COAD                                     |    Node/Link    | Node Clustering<br/>(Precision, Recall, F1-score)<br/>Link Prediction (HitRatio@K, MRR) |                    AMiner, News, LinkedIn                    |
-| Contrast-Reg                             |    Node/Link    | Node Classification (Acc)<br/>Node Clustering<br/>(NMI, Acc, Macro-F1)<br/>Link Prediction (ROC-AUC) | Cora, Citeseer, Pubmed, Reddit, ogbn-arxiv,  Wikipedia, ogbn-products, Amazo-Computers, Amazo-Photo |
-| DGI                                      |      Node       | Node Classification (Acc, Micro-F1)                          |             Cora, Citeseer, Pubmed, Reddit, PPI              |
-| HDMI                                     |      Node       | Node Classification<br/>(Micro-F1, Macro-F1)<br/>Node Clustering (NMI) |                   ACM, IMDB, DBLP, Amazon                    |
-| DMGI                                     |      Node       | Node Clustering (NMI)<br/>Node Classification (Acc)          |                   ACM, IMDB, DBLP, Amazon                    |
-| MVGRL                                    |   Node/Graph    | Node Classification (Acc)<br/>Node Clustering (NMI, ARI)<br/>Graph Classification (Acc) | Cora, Citeseer, Pubmed, MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B |
-| HDGI                                     |      Node       | Node Classification<br/>(Micro-F1, Macro-F1)<br/>Node Clustering (NMI, ARI) |                       ACM, DBLP, IMDB                        |
-| Subg-Con                                 |      Node       | Node Classification (Acc, Micro-F1)                          |         Cora, Citeseer, Pubmed, PPI, Flickr, Reddit          |
-| Cotext Prediction                        |      Graph      | Graph Classification (ROC-AUC)                               | MUTAG, PTC, PPI, BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE |
-| GIC                                      |    Node/Link    | Node Classification (Acc)<br/>Node Clustering (Acc, NMI, ARI)<br/>Link Prediction (ROC-AUC, ROC-AP) | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
-| GraphLoG                                 |      Graph      | Graph Classification (ROC-AUC)                               |     BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE     |
-| MHCN                                     |    Node/Link    | -                                                            |                    Last-FM, Douban, Yelp                     |
-| EGI                                      |    Node/Link    | Node Classification (Acc)<br/>Link Prediction (ROC-AUC, MRR) |                        YAGO, Airport                         |
-| MICRO-Graph                              |      Graph      | Graph Classification (ROC-AUC)                               |       BBBP, Tox21, ToxCast, ClinTox, HIV, SIDER, BACE        |
-| InfoGraph                                |      Graph      | Graph Classification (Acc)                                   |     MUTAG, PTC\_MR, RDT-B, RDT-M5K, IMDB-B, QM9, IMDB-M      |
-| SUGAR                                    |      Graph      | Graph Classification (Acc)                                   |           MUTAG, PTC, PROTEINS, D\&D, NCI1, NCI109           |
-| BiGI                                     |      Link       | Link Prediction (AUC-ROC, AUC-PR)                            |               DBLP, ML-100K, ML-1M, Wikipedia                |
-| HTC                                      |      Graph      | Graph Classification (Acc)                                   |     MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B, QM9, RDT-M5K      |
-| Node Property Prediction                 |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| S2GRL                                    |    Node/Link    | Node Classification (Acc, Micro-F1)<br/>Node Clustering (NMI)<br/>Link Prediction (ROC-AUC) |   Cora, Citeseer, Pubmed, PPI, Flickr, BlogCatalog, Reddit   |
-| PairwiseDistance                         |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| PairwiseAttrSim                          |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| Distance2Cluster                         |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| EdgeMask                                 |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| TopoTER                                  |   Node/Graph    | Node Classification (Acc)<br/>Graph Classification (Acc)     | Cora, Citeseer, Pubmed, MUTAG, PTC-MR, RDT-B, RDT-M5K, IMDB-B, IMDB-M |
-| Centrality Score Ranking                 | Node/Link/Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
-| Meta-path prediction                     |    Node/Link    | Node Classification (F1-score)<br/>Link Prediction (ROC-AUC) |              ACM, IMDB, Last-FM, Book-Crossing               |
-| SLiCE                                    |      Link       | Link Prediction (ROC-AUC, Micro-F1)                          |         Amazon, DBLP, Freebase, Twitter, Healthcare          |
-| Distance2Labeled                         |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| ContextLabel                             |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
-| HCM                                      |      Node       | Node Classification (ROC-AUC)                                |           ACM, Amazon, Enron, BlogCatalog, Flickr            |
-| Contextual Molecular Property Prediction |      Graph      | Graph Classification (Acc)<br/>Graph Regression (MAE)        | BBBP, SIDER, ClinTox, BACE, Tox21, ToxCast, ESOL, FreeSolv, Lipo, QM7, QM8 |
-| Graph-level Motif Prediction             |      Graph      | Graph Classification (Acc)<br/>Graph Regression (MAE)        | BBBP, SIDER, ClinTox, BACE, Tox21, ToxCast, ESOL, FreeSolv, Lipo, QM7, QM8 |
-| Multi-stage Self-training                |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| Node Clustering                          |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| Graph Partitioning                       |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| CAGAN                                    |      Node       | Node Classfication<br/>(Micro-F1, Macro-F1)<br/>Node Clustering<br/>(Micro-F1, Macro-F1, NMI) |                    Cora, Citeseer, Pubmed                    |
-| M3S                                      |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
-| Cluster Preserving                       | Node/Link/Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
+| Methods                                      |   Task Level    | Evaluation Metric                                            |                           Dataset                            |
+| :------------------------------------------- | :-------------: | :----------------------------------------------------------- | :----------------------------------------------------------: |
+| Graph Completion                             |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
+| Node Attribute Masking                       |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| Edge Attribute Masking                       |      Graph      | Graph Classification (ROC-AUC)                               | MUTAG, PTC, PPI, BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE |
+| Node Attribute and<br/>Embedding Denoising   |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
+| Adjacency Matrix Reconstruction              |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
+| Graph Bert                                   |      Node       | Node Classification (Acc)<br/>Node Clustering (NMI)          |                    Cora, Citeseer, Pubmed                    |
+| Pretrain-Recsys                              |    Node/Link    | -                                                            |                   ML-1M, MOOCs and Last-FM                   |
+| GPT-GNN                                      |    Node/Link    | Node Classification (F1-score)<br/>Link Prediction (ROC-AUC) |                     OAG, Amazon, Reddit                      |
+| GraphCL                                      |      Graph      | Graph Classification  (Acc, ROC-AUC)                         | NCI1, PROTEINS, D\&D, COLLAB, RDT-B, RDT-M5K, GITHUB, MNIST, CIFAR10, MUTAG, IMDB-B, BBBP, Tox21, ToxCast, SIDER, ClinTox, MUV, HIV, BACE, PPI |
+| IGSD                                         |      Graph      | Graph Classification (Acc)                                   |      MUTAG, PTC\_MR, NCI1, IMDB-B, QM9, COLLAB, IMDB-M       |
+| DACL                                         |      Graph      | Graph Classification (Acc)                                   |        MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B, RDT-M5K        |
+| LCL                                          |      Graph      | Graph Classification (Acc)                                   |   IMDB-B, IMDB-M, COLLAB, MUTAG, PROTEINS, PTC, NCI1, D\&D   |
+| CSSL                                         |      Graph      | Graph Classification (Acc)                                   |          PROTEINS, D\&D, NCI1, NCI109, Mutagenicity          |
+| GCC                                          |   Node/Graph    | Node Classification (Acc)<br/>Graph Classification (Acc)     | US-Airport, H-index, COLLAB, IMDB-B, IMDB-M, RDT-B, RDT-M5K  |
+| GRACE                                        |      Node       | Node Classification (Acc, Micro-F1)                          |          Cora, Citeseer, Pubmed, DBLP, Reddit, PPI           |
+| GCA                                          |      Node       | Node Classification (Acc)                                    | Wiki-CS, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
+| GROC                                         |      Node       | Node Classification (Acc)                                    |        Cora, Citeseer, Pubmed, Amazon-Photo, Wiki-CS         |
+| STDGI                                        |      Node       | Node Regression (MAE, RMSE, MAPE)                            |                           METR-LA                            |
+| GMI                                          |    Node/Link    | Node Classification (Acc, Micro-F1)<br/>Link Prediction (ROC-AUC) |   Cora, Citeseer, PubMed, Reddit, PPI, BlogCatalog, Flickr   |
+| KS2L                                         |    Node/Link    | Node Classification (Acc)<br/>Link Prediction (ROC-AUC)      | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS |
+| CG3                                          |      Node       | Node Classification (Acc)                                    | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS |
+| BGRL                                         |      Node       | Node Classification (Acc, Micro-F1)                          | Wiki-CS, Amazon-Computers, Amazon-Photo, PPI, Coauthor-CS, Coauthor-Physics, ogbn-arxiv |
+| SelfGNN                                      |      Node       | Node Classification (Acc)                                    | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
+| PT-DGNN                                      |      Link       | Link Prediction (ROC-AUC)                                    |               HepPh, Math Overflow, Super User               |
+| COAD                                         |    Node/Link    | Node Clustering (Precision, Recall, F1-score)<br/>Link Prediction (HitRatio@K, MRR) |                    AMiner, News, LinkedIn                    |
+| Contrast-Reg                                 |    Node/Link    | Node Classification (Acc)<br/>Node Clustering (NMI, Acc, Macro-F1)<br/>Link Prediction (ROC-AUC) | Cora, Citeseer, Pubmed, Reddit, ogbn-arxiv,  Wikipedia, ogbn-products, Amazo-Computers, Amazo-Photo |
+| DGI                                          |      Node       | Node Classification (Acc, Micro-F1)                          |             Cora, Citeseer, Pubmed, Reddit, PPI              |
+| HDMI                                         |      Node       | Node Classification (Micro-F1, Macro-F1)<br/>Node Clustering (NMI) |                   ACM, IMDB, DBLP, Amazon                    |
+| DMGI                                         |      Node       | Node Clustering (NMI)<br/>Node Classification (Acc)          |                   ACM, IMDB, DBLP, Amazon                    |
+| MVGRL                                        |   Node/Graph    | Node Classification (Acc)<br/>Node Clustering (NMI, ARI)<br/>Graph Classification (Acc) | Cora, Citeseer, Pubmed, MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B |
+| HDGI                                         |      Node       | Node Classification (Micro-F1, Macro-F1)<br/>Node Clustering (NMI, ARI) |                       ACM, DBLP, IMDB                        |
+| Subg-Con                                     |      Node       | Node Classification (Acc, Micro-F1)                          |         Cora, Citeseer, Pubmed, PPI, Flickr, Reddit          |
+| Cotext Prediction                            |      Graph      | Graph Classification (ROC-AUC)                               | MUTAG, PTC, PPI, BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE |
+| GIC                                          |    Node/Link    | Node Classification (Acc)<br/>Node Clustering (Acc, NMI, ARI)<br/>Link Prediction (ROC-AUC, ROC-AP) | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
+| GraphLoG                                     |      Graph      | Graph Classification (ROC-AUC)                               |     BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE     |
+| MHCN                                         |    Node/Link    | -                                                            |                    Last-FM, Douban, Yelp                     |
+| EGI                                          |    Node/Link    | Node Classification (Acc)<br/>Link Prediction (ROC-AUC, MRR) |                        YAGO, Airport                         |
+| MICRO-Graph                                  |      Graph      | Graph Classification (ROC-AUC)                               |       BBBP, Tox21, ToxCast, ClinTox, HIV, SIDER, BACE        |
+| InfoGraph                                    |      Graph      | Graph Classification (Acc)                                   |     MUTAG, PTC\_MR, RDT-B, RDT-M5K, IMDB-B, QM9, IMDB-M      |
+| SUGAR                                        |      Graph      | Graph Classification (Acc)                                   |           MUTAG, PTC, PROTEINS, D\&D, NCI1, NCI109           |
+| BiGI                                         |      Link       | Link Prediction (AUC-ROC, AUC-PR)                            |               DBLP, ML-100K, ML-1M, Wikipedia                |
+| HTC                                          |      Graph      | Graph Classification (Acc)                                   |     MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B, QM9, RDT-M5K      |
+| Node Property Prediction                     |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| S2GRL                                        |    Node/Link    | Node Classification (Acc, Micro-F1)<br/>Node Clustering (NMI)<br/>Link Prediction (ROC-AUC) |   Cora, Citeseer, Pubmed, PPI, Flickr, BlogCatalog, Reddit   |
+| PairwiseDistance                             |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| PairwiseAttrSim                              |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| Distance2Cluster                             |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| EdgeMask                                     |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| TopoTER                                      |   Node/Graph    | Node Classification (Acc)<br/>Graph Classification (Acc)     | Cora, Citeseer, Pubmed, MUTAG, PTC-MR, RDT-B, RDT-M5K, IMDB-B, IMDB-M |
+| Centrality Score Ranking                     | Node/Link/Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
+| Meta-path prediction                         |    Node/Link    | Node Classification (F1-score)<br/>Link Prediction (ROC-AUC) |              ACM, IMDB, Last-FM, Book-Crossing               |
+| SLiCE                                        |      Link       | Link Prediction (ROC-AUC, Micro-F1)                          |         Amazon, DBLP, Freebase, Twitter, Healthcare          |
+| Distance2Labeled                             |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| ContextLabel                                 |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
+| HCM                                          |      Node       | Node Classification (ROC-AUC)                                |           ACM, Amazon, Enron, BlogCatalog, Flickr            |
+| Contextual Molecular<br/>Property Prediction |      Graph      | Graph Classification (Acc)<br/>Graph Regression (MAE)        | BBBP, SIDER, ClinTox, BACE, Tox21, ToxCast, ESOL, FreeSolv, Lipo, QM7, QM8 |
+| Graph-level Motif Prediction                 |      Graph      | Graph Classification (Acc)<br/>Graph Regression (MAE)        | BBBP, SIDER, ClinTox, BACE, Tox21, ToxCast, ESOL, FreeSolv, Lipo, QM7, QM8 |
+| Multi-stage Self-training                    |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
+| Node Clustering                              |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
+| Graph Partitioning                           |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
+| CAGAN                                        |      Node       | Node Classfication (Micro-F1, Macro-F1)<br/>Node Clustering (Micro-F1, Macro-F1, NMI) |                    Cora, Citeseer, Pubmed                    |
+| M3S##################                        |      Node       | Node&nbsp;Classification&nbsp;(Acc)#################################### |                    Cora, Citeseer, Pubmed                    |
+| Cluster Preserving                           | Node/Link/Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
 
 ## A summary of Common Graph Datasets
 
