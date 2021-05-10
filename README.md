@@ -209,7 +209,7 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | IGSD                                         |    Attributed    |      Contrastive/G-G      |             Edge Perturbation<br/>Edge Doffisopm             |                        InfoNCE                        |      JL/URL       | 2020 |
 | DACL                                         |    Attributed    |      Contrastive/G-G      |                            Mixup                             |                        InfoNCE                        |        URL        | 2020 |
 | LCL                                          |    Attributed    |      Contrastive/G-G      |                             None                             |                        InfoNCE                        |        JL         | 2021 |
-| CSSL                                         |    Attributed    |   &nbsp;Contrastive/G-G   |   NodeInsertion<br/>Edge Perturbation<br/>Uniform Sampling   |                        InfoNCE                        |    P\&F/JL/URL    | 2020 |
+| CSSL                                         |    Attributed    |      Contrastive/G-G      |   NodeInsertion<br/>Edge Perturbation<br/>Uniform Sampling   |                        InfoNCE                        |    P\&F/JL/URL    | 2020 |
 | GCC                                          |   Unattributed   |      Contrastive/C-C      |                Random&nbsp;Walk&nbsp;Sampling                |                        InfoNCE                        |     P\&F/URL      | 2020 |
 | GRACE                                        |    Attributed    |      Contrastive/L-L      |           Attribute Masking<br/>Edge Perturbation            |                        InfoNCE                        |        URL        | 2020 |
 | GCA                                          |    Attributed    |      Contrastive/L-L      |                       Attention-based                        |                        InfoNCE                        |        URL        | 2020 |
@@ -328,7 +328,7 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 | Node Clustering                              |          Node           | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | Graph Partitioning                           |          Node           | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | CAGAN                                        |          Node           | Node Classfication<br/>(Micro-F1, Macro-F1)<br/>Node Clustering<br/>(Micro-F1, Macro-F1, NMI) |                    Cora, Citeseer, Pubmed                    |
-| M3S                                          |          Node           | Node&nbsp;Classification&nbsp;(Acc)####################      |                    Cora, Citeseer, Pubmed                    |
+| M3S                                          |          Node           | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | Cluster Preserving                           | Node<br/>Link<br/>Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
 
 ## A summary of Common Graph Datasets
