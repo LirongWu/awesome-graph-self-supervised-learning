@@ -16,12 +16,14 @@ A curated list for awesome self-supervised graph representation learning resourc
 - [Overview](#Overview)
 - [Training Strategy](#Training-Strategy)
 - [Contrastive Learning](#Contrastive-Learning)
-  - [Global-Global (Same-Scale)  Contrasting](#Global-Global-(Same-Scale)-Contrasting)
-  - [Context-Context (Same-Scale) Contrasting](#Context-Context-(Same-Scale)-Contrasting)
-  - [Local-Local (Same-Scale) Contrasting](#Local-Local-(Same-Scale)-Contrasting)
-  - [Local-Global (Corss-Scale) Contrasting](#Local-Global-(Cross-Scale)-Contrasting)
-  - [Local-Context (Corss-Scale) Contrasting](#Local-Context-(Cross-Scale)-Contrasting)
-  - [Context-Global (Corss-Scale) Contrasting](#Context-Global-(Corss-Scale)-Contrasting)
+  - [Same-Scale Contrasting](#Global-Global-Contrasting)
+    - [Global-Global Contrasting](#Global-Global-Contrasting)
+    - [Context-Context Contrasting](#Context-Context-Contrasting)
+    - [Local-Local Contrasting](#Local-Local-Contrasting)
+  - [Corss-Scale Contrasting](#Local-Global-Contrasting)
+    - [Local-Global Contrasting](#Local-Global-Contrasting)
+    - [Local-Context Contrasting](#Local-Context-Contrasting)
+    - [Context-Global Contrasting](#Context-Global-Contrasting)
 - [Generative Learning](#Generative-Learning)
   - [Graph Autoencoding](#Graph-Autoencoding)
   - [Graph Autoregression](#Graph-Autoregression)
@@ -61,7 +63,7 @@ Considering the relationship among bottleneck encoders, self-supervised pretext 
 
 ## Contrastive Learning
 
-A general framework for contrastive learning is shown below. The two contrasting components may be local, contextual, or global, corresponding to node-level (marked in red), subgraph-level (marked in green), or graph-level (marked in yellow) information in the graph. The contrastive learning can thus contrast two views (at the *same* or *different* scales), which leads to two categories of algorithm: (1) same-scale contrasting, including local-local contrasting, context-context contrasting, and global-global contrasting; and (2) cross-scale contrasting, including local-context contrasting, local-global contrasting, and context-global contrasting.
+A general framework for contrastive learning is shown below. The two contrasting components may be local, contextual, or global, corresponding to node-level (marked in red), subgraph-level (marked in green), or graph-level (marked in yellow) information in the graph. The contrastive learning can thus contrast two views (at the *same* or *different* scales), which leads to two categories of algorithm: (1) same-scale contrasting, including *Local-Local (L-L)* contrasting, *Context-Context (C-C)* contrasting, and *Global-Global (G-G)* contrasting; and (2) cross-scale contrasting, including *Local-Context (L-C)* contrasting, *Local-Global (L-G)* contrasting, and *Context-Global (C-G)* contrasting.
 
 <p align="center">
   <img src='./figs/contrasting_pretext.PNG' width="800">
@@ -69,7 +71,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 
 
 
-#### Global-Global (Same-Scale)  Contrasting
+#### Global-Global Contrasting
 
 - GraphCL: Graph Contrastive Learning with Augmentations.
   - Y. You, T. Chen, Y. Sui, T. Chen, Z. Wang, and Y. Shen. *NIPS 2020*. [[pdf]](https://proceedings.neurips.cc/paper/2020/file/3fe230348e9a12c13120749e3f9fa4cd-Paper.pdf) [[code]](https://github.com/Shen-Lab/GraphCL)
@@ -82,12 +84,12 @@ A general framework for contrastive learning is shown below. The two contrasting
 - CSSL: Contrastive Self-Supervised Learning for Graph Classification.
   - J. Zeng and P. Xie. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.05923.pdf)
 
-#### Context-Context (Same-Scale) Contrasting
+#### Context-Context Contrasting
 
 - GCC: Graph Contrastive Coding for Graph Neural Network Pre-training.
   - J. Qiu, Q. Chen, Y. Dong, J. Zhang, H. Yang, M. Ding, K. Wang, and J. Tang. *KDD 2020*. [[pdf]](https://arxiv.org/pdf/2006.09963.pdf) [[code]](https://github.com/THUDM/GCC)
 
-#### Local-Local (Same-Scale) Contrasting
+#### Local-Local Contrasting
 
 - GRACE: Deep Graph Contrastive Representation Learning.
   - Y. Zhu, Y. Xu, F. Yu, Q. Liu, S. Wu, and L. Wang. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2006.04131.pdf) [[code]](https://github.com/CRIPAC-DIG/GRACE)
@@ -116,7 +118,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - C-SWM: Contrastive Learning of Structured World Models.
   - T. Kipf, E. van der Pol, and M. Welling. *Arxiv 2019. [[pdf]](https://arxiv.org/pdf/1911.12247.pdf) [[code]](https://github.com/tkipf/c-swm)
 
-#### Local-Global (Cross-Scale) Contrasting
+#### Local-Global Contrasting
 
 - DGI: Deep Graph Infomax.
   - P. Velickovic, W. Fedus, W. L. Hamilton, P. Li` o, Y. Bengio, and R. D. Hjelm. *ICLR 2019*. [[pdf]](https://arxiv.org/pdf/1809.10341.pdf) [[code]](https://github.com/PetarV-/DGI)
@@ -129,7 +131,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - HIGI: Heterogeneous Deep Graph Infomax.
   - Y. Ren, B. Liu, C. Huang, P. Dai, L. Bo, and J. Zhang. *Arxiv 2019*. [[pdf]](https://arxiv.org/pdf/1911.08538.pdf) [[code]](https://github.com/YuxiangRen/Heterogeneous-Deep-Graph-Infomax)
 
-#### Local-Context (Cross-Scale) Contrasting
+#### Local-Context Contrasting
 
 - Subg-Con: Sub-graph Contrast for Scalable Self-Supervised Graph Representation Learning.
   - Y. Jiao, Y. Xiong, J. Zhang, Y. Zhang, T. Zhang, and Y. Zhu. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.10273.pdf) [[code]](https://github.com/yzjiao/Subg-Con)
@@ -144,7 +146,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - EGI: Transfer Learning of Graph Neural Networks with Ego-graph Information Maximization.
   - Q. Zhu, Y. Xu, H.Wang, C. Zhang, J. Han, and C. Yang. *Arxiv 2020*. [[pdf]](https://arxiv.org/abs/2009.05204) [[code]](https://openreview.net/forum?id=J_pvI6ap5Mn)
 
-#### Context-Global (Cross-Scale) Contrasting
+#### Context-Global Contrasting
 
 - MICRO-Graph: Motif-Driven Contrastive Learning of Graph Representations.
   - S. Zhang, Z. Hu, A. Subramonian, and Y. Sun. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2012.12533.pdf) [[code]](https://drive.google.com/file/d/1b751rpnV-SDmUJvKZZI-AvpfEa9eHxo9/)
