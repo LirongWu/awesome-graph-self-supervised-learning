@@ -35,7 +35,7 @@ A curated list for awesome self-supervised graph representation learning resourc
 - [A Summary of Methodology Details](#A-Summary-of-Methodology-Details)
 - [A Summary of Implementation Details](#A-Summary-of-Implementation-Details)
 - [A Summary of Common Graph Datasets](#A-Summary-of-Common-Graph-Datasets)
-- [A Summary of Open-source Codes (Github)](#A-Summary-of-Open-source-Codes-(Github))
+- [A Summary of Open-source Codes](#A-Summary-of-Open-source-Codes)
 
 ## Overview
 
@@ -455,7 +455,7 @@ About category, graph number, node number per graph, edge number per graph, dime
 |   Amazon-Photo   | Others (Purchase) |    1    |     7650      |    119081     |    745    |    8    |
 |  ogbn-products   | Others (Purchase) |    1    |    2449029    |   61859140    |    100    |   47    |
 
-## A Summary of Open-source Codes (Github)
+## A Summary of Open-source Codes
 
 | Methods                                  | Github                                                       |
 | :--------------------------------------- | :----------------------------------------------------------- |
