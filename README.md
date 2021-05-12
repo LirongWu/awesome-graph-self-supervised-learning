@@ -135,7 +135,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 
 - Subg-Con: Sub-graph Contrast for Scalable Self-Supervised Graph Representation Learning.
   - Y. Jiao, Y. Xiong, J. Zhang, Y. Zhang, T. Zhang, and Y. Zhu. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.10273.pdf) [[code]](https://github.com/yzjiao/Subg-Con)
-- Strategies for Pre-training Graph Neural Networks.
+- Cotext Prediction: Strategies for Pre-training Graph Neural Networks.
   - W. Hu, B. Liu, J. Gomes, M. Zitnik, P. Liang, V. S. Pande, and J. Leskovec. *ICLR 2020*. [[pdf]](https://arxiv.org/pdf/1905.12265.pdf) [[code]](http://snap.stanford.edu/gnn-pretrain)
 - GIC: Leveraging Cluster-level Node Information for Unsupervised Graph Representation Learning.
   - C. Mavromatis and G. Karypis. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.06946.pdf) [[code]](https://github.com/cmavro/Graph-InfoClust-GIC)
