@@ -536,13 +536,13 @@ If you would like to help contribute this list, please feel free to contact me o
   - Author List. *Conference Year*. [[pdf]](link) [[code]](link)
 ```
 
-This is a Github Summary of our [Survey](https://arxiv.org/abs/1911.05722). If you find this file useful in your research, please consider citing:
+This is a Github Summary of our [Survey](https://arxiv.org/abs/2105.07342). If you find this file useful in your research, please consider citing:
 ```
-@Article{he2019moco,
-  author  = {Kaiming He and Haoqi Fan and Yuxin Wu and Saining Xie and Ross Girshick},
-  title   = {Momentum Contrast for Unsupervised Visual Representation Learning},
-  journal = {arXiv preprint arXiv:1911.05722},
-  year    = {2019},
+@Article{wu2021self,
+  author  = {Lirong Wu and Haitao Lin and Zhangyang Gao and Cheng Tan and Stan.Z.Li},
+  title   = {Self-supervised on Graphs: Contrastive, Generative,or Predictive},
+  journal = {arXiv preprint arXiv:2105.07342},
+  year    = {2021},
 }
 ```
 
