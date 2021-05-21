@@ -538,11 +538,11 @@ If you would like to help contribute this list, please feel free to contact me o
 
 This is a Github Summary of our [Survey](https://arxiv.org/abs/1911.05722). If you find this file useful in your research, please consider citing:
 ```
-@Article{he2019moco,
-  author  = {Kaiming He and Haoqi Fan and Yuxin Wu and Saining Xie and Ross Girshick},
-  title   = {Momentum Contrast for Unsupervised Visual Representation Learning},
-  journal = {arXiv preprint arXiv:1911.05722},
-  year    = {2019},
+@Article{wu2021self,
+  author  = {Wu, Lirong and Lin, Haitao and Gao, Zhangyang and Tan, Cheng and Li, Stan and others},
+  title   = {self-supervised on graphs: contrastive, generative,or predictive},
+  journal = {arXiv preprint arXiv:2105.07342},
+  year    = {2021},
 }
 ```
 
