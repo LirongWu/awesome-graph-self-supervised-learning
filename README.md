@@ -283,7 +283,7 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | GraphCL                                      |    Attributed    |        Contrastive/G-G        | Attribute Masking<br/>Edge Perturbation<br/>Random Walk Sampling |                        InfoNCE                        |        URL        | 2020 |
 | IGSD                                         |    Attributed    |        Contrastive/G-G        |             Edge Perturbation<br/>Edge Doffisopm             |                        InfoNCE                        |      JL/URL       | 2020 |
 | DACL                                         |    Attributed    |        Contrastive/G-G        |                            Mixup                             |                        InfoNCE                        |        URL        | 2020 |
-| LCL                                          |    Attributed    |        Contrastive/G-G        |                             None                             |                        InfoNCE                        |        JL         | 2021 |
+| LCC                                          |    Attributed    |        Contrastive/G-G        |                             None                             |                        InfoNCE                        |        JL         | 2021 |
 | CSSL                                         |    Attributed    |        Contrastive/G-G        |   NodeInsertion<br/>Edge Perturbation<br/>Uniform Sampling   |                        InfoNCE                        |    P\&F/JL/URL    | 2020 |
 | GCC                                          |   Unattributed   |        Contrastive/C-C        |                Random&nbsp;Walk&nbsp;Sampling                |                        InfoNCE                        |     P\&F/URL      | 2020 |
 | GRACE                                        |    Attributed    |        Contrastive/L-L        |           Attribute Masking<br/>Edge Perturbation            |                        InfoNCE                        |        URL        | 2020 |
@@ -353,7 +353,7 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 | GraphCL                                      |      Graph      | Graph Classification  (Acc, ROC-AUC)                         | NCI1, PROTEINS, D\&D, COLLAB, RDT-B, RDT-M5K, GITHUB, MNIST, CIFAR10, MUTAG, IMDB-B, BBBP, Tox21, ToxCast, SIDER, ClinTox, MUV, HIV, BACE, PPI |
 | IGSD                                         |      Graph      | Graph Classification (Acc)                                   |      MUTAG, PTC\_MR, NCI1, IMDB-B, QM9, COLLAB, IMDB-M       |
 | DACL                                         |      Graph      | Graph Classification (Acc)                                   |        MUTAG, PTC\_MR, IMDB-B, IMDB-M, RDT-B, RDT-M5K        |
-| LCL                                          |      Graph      | Graph Classification (Acc)                                   |   IMDB-B, IMDB-M, COLLAB, MUTAG, PROTEINS, PTC, NCI1, D\&D   |
+| LCC                                          |      Graph      | Graph Classification (Acc)                                   |   IMDB-B, IMDB-M, COLLAB, MUTAG, PROTEINS, PTC, NCI1, D\&D   |
 | CSSL                                         |      Graph      | Graph Classification (Acc)                                   |          PROTEINS, D\&D, NCI1, NCI109, Mutagenicity          |
 | GCC                                          |   Node/Graph    | Node Classification (Acc)<br/>Graph Classification (Acc)     | US-Airport, H-index, COLLAB, IMDB-B, IMDB-M, RDT-B, RDT-M5K  |
 | GRACE                                        |      Node       | Node Classification (Acc, Micro-F1)                          |          Cora, Citeseer, Pubmed, DBLP, Reddit, PPI           |
@@ -472,7 +472,7 @@ About category, graph number, node number per graph, edge number per graph, dime
 | GraphCL                                  | https://github.com/Shen-Lab/GraphCL                          |
 | IGSD                                     | N.A.                                                         |
 | DACL                                     | N.A.                                                         |
-| LCL                                      | https://github.com/YuxiangRen                                |
+| LCC                                      | https://github.com/YuxiangRen                                |
 | CSSL                                     | N.A.                                                         |
 | GCC                                      | https://github.com/THUDM/GCC                                 |
 | GRACE                                    | https://github.com/CRIPAC-DIG/GRACE                          |
