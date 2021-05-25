@@ -79,7 +79,7 @@ A general framework for contrastive learning is shown below. The two contrasting
   - H. Zhang, S. Lin, W. Liu, P. Zhou, J. Tang, X. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2010.12609.pdf)
 - DACL: Towards Domain-Agnostic Contrastive Learning.
   - V. Verma, M.-T. Luong, K. Kawaguchi, H. Pham, andQ. V. Le. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2011.04419.pdf)
-- LCL: Label Contrastive Coding Based Graph Neural Network for Graph Classification.
+- LCC: Label Contrastive Coding Based Graph Neural Network for Graph Classification.
   - Y. Ren, J. Bai, and J. Zhang. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2101.05486.pdf) [[code]](https://github.com/YuxiangRen/Label-Contrastive-Coding-based-Graph-Neural-Network-for-Graph-Classification-)
 - CSSL: Contrastive Self-Supervised Learning for Graph Classification.
   - J. Zeng and P. Xie. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.05923.pdf)
