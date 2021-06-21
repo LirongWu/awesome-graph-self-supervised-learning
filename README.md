@@ -536,13 +536,13 @@ If you would like to help contribute this list, please feel free to contact me o
   - Author List. *Conference Year*. [[pdf]](link) [[code]](link)
 ```
 
-This is a Github Summary of our [Survey](https://arxiv.org/abs/1911.05722). If you find this file useful in your research, please consider citing:
+This is a Github Summary of our [Survey](https://arxiv.org/abs/2105.07342). If you find this file useful in your research, please consider citing:
 ```
-@Article{wu2021self,
-  author  = {Wu, Lirong and Lin, Haitao and Gao, Zhangyang and Tan, Cheng and Li, Stan and others},
-  title   = {self-supervised on graphs: contrastive, generative,or predictive},
-  journal = {arXiv preprint arXiv:2105.07342},
-  year    = {2021},
+@article{wu2021self,
+  title={Self-supervised on Graphs: Contrastive, Generative, or Predictive},
+  author={Wu, Lirong and Lin, Haitao and Gao, Zhangyang and Tan, Cheng and Li, Stan and others},
+  journal={arXiv preprint arXiv:2105.07342},
+  year={2021}
 }
 ```
 
