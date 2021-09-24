@@ -97,6 +97,8 @@ A general framework for contrastive learning is shown below. The two contrasting
   - Y. Zhu, Y. Xu, F. Yu, Q. Liu, S. Wu, and L. Wang. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2010.14945.pdf) [[code]](https://github.com/CRIPAC-DIG/GCA)
 - GROC: Towards Robust Graph Contrastive Learning.
   - N. Jovanovi´c, Z. Meng, L. Faber, and R. Wattenhofer. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.13085.pdf)
+- SEPT: Socially-Aware Self-Supervised Tri-Training for Recommendation.
+  -  J. Yu, H. Yin, M. Gao, X. Xia, X. Zhang, and N. Q. V.Hung. *Arxiv 2021*. [[pdf]](https://arxiv.org/abs/2106.03569) [[code]](https://github.com/Coder-Yu/QRec)
 - STDGI: Spatio-Temporal Deep Graph Infomax.
   - F. L. Opolka, A. Solomon, C. Cangea, P. Veliˇckovi´c, P. Li` o, and R. D. Hjelm. *Arxiv 2019*. [[pdf]](https://arxiv.org/pdf/1904.06316.pdf)
 - GMI: Graph Representation Learning via Graphical Mutual Information Maximization.
@@ -109,6 +111,8 @@ A general framework for contrastive learning is shown below. The two contrasting
   - S. Thakoor, C. Tallec, M. G. Azar, R. Munos, P. Veliˇckovi´c, and M. Valko. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.06514.pdf)
 - SelfGNN: Self-supervised Graph Neural Networks without Explicit Negative Sampling.
   - Z. T. Kefato and S. Girdzijauskas. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2103.14958.pdf) [[code]](https://github.com/zekarias-tilahun/SelfGNN)
+- HeCo: Self-supervised Heterogeneous Graph Neural Network with Co-contrastive Learning.
+  - X. Wang, N. Liu, H. Han, and C. Shi. *Arxiv 2021*. [[pdf]](https://arxiv.org/abs/2105.09111) [[code]](https://github.com/liun-online/HeCo)
 - PT-DGNN: Pre-training on Dynamic Graph Neural Networks.
   - J. Zhang, K. Chen, and Y. Wang. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.12380.pdf) [[code]](https://github.com/Mobzhang/PT-DGNN)
 - COAD: Coad: Contrastive Pretraining with Adversarial Fine-tuning for Zero-shot Expert Linking.
@@ -128,7 +132,7 @@ A general framework for contrastive learning is shown below. The two contrasting
   - C. Park, D. Kim, J. Han, and H. Yu. *AAAI 2020*. [[pdf]](https://ojs.aaai.org/index.php/AAAI/article/view/5985/5841) [[code]](https://github.com/pcy1302/DMGI)
 - MVGRL: Contrastive Multi-View Representation Learning on Graphs.
   - K. Hassani and A. H. K. Ahmadi. *ICML 2020*. [[pdf]](http://proceedings.mlr.press/v119/hassani20a/hassani20a.pdf) [[code]](https://github.com/kavehhassani/mvgrl)
-- HIGI: Heterogeneous Deep Graph Infomax.
+- HDGI: Heterogeneous Deep Graph Infomax.
   - Y. Ren, B. Liu, C. Huang, P. Dai, L. Bo, and J. Zhang. *Arxiv 2019*. [[pdf]](https://arxiv.org/pdf/1911.08538.pdf) [[code]](https://github.com/YuxiangRen/Heterogeneous-Deep-Graph-Infomax)
 
 #### Local-Context Contrasting
@@ -276,7 +280,7 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | Node Attribute Masking                       |    Attributed    |         Generative/AE         |                      Attribute Masking                       |                          MAE                          |      P\&F/JL      | 2020 |
 | Edge Attribute Masking                       |    Attributed    |         Generative/AE         |                      Attribute Masking                       |                          MAE                          |       P\&F        | 2019 |
 | Node Attribute and<br/>Embedding Denoising   |    Attributed    |         Generative/AE         |                      Attribute Masking                       |                          MAE                          |        JL         | 2020 |
-| Adjacency Matrix<br/>Reconstruction          |    Attributed    |         Generative/AE         |           Attribute Masking<br/>Edge Perturbation            |                        MAE/CE                         |        JL         | 2020 |
+| Adjacency Matrix<br/>Reconstruction          |    Attributed    |         Generative/AE         |           Attribute Masking<br/>Edge Perturbation            |                        MAE                         |        JL         | 2020 |
 | Graph Bert                                   |    Attributed    |         Generative/AE         |           Attribute Masking<br/>Edge Perturbation            |                          MAE                          |       P\&F        | 2020 |
 | Pretrain-Recsys                              |    Attributed    |         Generative/AE         |                      Edge Perturbation                       |                          MAE                          |       P\&F        | 2021 |
 | GPT-GNN                                      |  Heterogeneous   |         Generative/AR         |           Attribute Masking<br/>Edge Perturbation            |                      MAE/InfoNCE                      |       P\&F        | 2020 |
@@ -289,22 +293,24 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | GRACE                                        |    Attributed    |        Contrastive/L-L        |           Attribute Masking<br/>Edge Perturbation            |                        InfoNCE                        |        URL        | 2020 |
 | GCA                                          |    Attributed    |        Contrastive/L-L        |                       Attention-based                        |                        InfoNCE                        |        URL        | 2020 |
 | GROC                                         |    Attributed    |        Contrastive/L-L        |                        Gradient-based                        |                        InfoNCE                        |        URL        | 2021 |
+| SEPT                                         |    Attributed    |        Contrastive/L-L        |                        Edge Perturbation                        |                        InfoNCE                        |        JL        | 2021 |
 | STDGI                                        | Spatial-Temporal |        Contrastive/L-L        |                     Attribute Shuffling                      |                     JS Estimator                      |        URL        | 2019 |
 | GMI                                          |    Attributed    |        Contrastive/L-L        |                             None                             |                     SP Estimator                      |        URL        | 2020 |
 | KS2L                                         |    Attributed    |        Contrastive/L-L        |                             None                             |                        InfoNCE                        |        URL        | 2020 |
 | CG3                                          |    Attributed    |        Contrastive/L-L        |                             None                             |                        InfoNCE                        |        JL         | 2020 |
 | BGRL                                         |    Attributed    |        Contrastive/L-L        |           Attribute Masking<br/>Edge Perturbation            |                     Inner Product                     |        URL        | 2021 |
 | SelfGNN                                      |    Attributed    |        Contrastive/L-L        |             Attribute Masking<br/>Edge Diffusion             |                          MSE                          |        URL        | 2021 |
+| HeCo                                      |    Heterogeneous    |        Contrastive/L-L        |             None             |                          InfoNCE                          |        URL        | 2021 |
 | PT-DGNN                                      |     Dynamic      |        Contrastive/L-L        |           Attribute Masking<br/>Edge Perturbation            |                       InforNCE                        |       P\&F        | 2021 |
-| COAD                                         |    Attributed    |        Contrastive/L-L        |                             None                             |                     Triplet Loss                      |       P\&F        | 2020 |
+| COAD                                         |    Attributed    |        Contrastive/L-L        |                             None                             |                     Triplet Margin Loss                      |       P\&F        | 2020 |
 | Contrst-Reg                                  |    Attributed    |        Contrastive/L-L        |                     Attribute Shuffling                      |                        InfoNCE                        |        JL         | 2021 |
 | DGI                                          |    Attributed    |        Contrastive/L-G        |                          Arbitrary                           |                     JS Estimator                      |        URL        | 2019 |
 | HDMI                                         |    Attributed    |        Contrastive/L-G        |                     Attribute Shuffling                      |                     JS Estimator                      |        URL        | 2021 |
 | DMGI                                         |  Heterogeneous   |        Contrastive/L-G        |                     Attribute Shuffling                      |                   JS Estimator/MAE                    |        URL        | 2020 |
 | MVGRL                                        |    Attributed    |        Contrastive/L-G        | Attribute Masking<br/>Edge Perturbation<br/>Edge Diffusion<br/>Random Walk Sampling | DV Estimator<br/>JS Estimator<br/>NT-Xent<br/>InfoNCE |        URL        | 2020 |
 | HDGI                                         |  Heterogeneous   |        Contrastive/L-G        |                     Attribute Shuffling                      |                     JS Estimator                      |        URL        | 2019 |
-| Subg-Con                                     |    Attributed    |        Contrastive/L-C        |                     Importance Sampling                      |                    Triplet Margin                     |        URL        | 2020 |
-| Cotext Prediction                            |    Attributed    |        Contrastive/L-C        |                      Ego-nets Sampling                       |                          CE                           |       P\&F        | 2019 |
+| Subg-Con                                     |    Attributed    |        Contrastive/L-C        |                     Importance Sampling                      |                    Triplet Margin Loss                     |        URL        | 2020 |
+| Cotext Prediction                            |    Attributed    |        Contrastive/L-C        |                      Ego-nets Sampling                       |                          Cross Entropy                           |       P\&F        | 2019 |
 | GIC                                          |    Attributed    |        Contrastive/L-C        |                          Arbitrary                           |                     JS Estimator                      |        URL        | 2020 |
 | GraphLoG                                     |    Attributed    |        Contrastive/L-C        |                      Attribute Masking                       |                        InfoNCE                        |        URL        | 2021 |
 | MHCN                                         |  Heterogeneous   |        Contrastive/L-C        |                     Attribute Shuffling                      |                        InfoNCE                        |        JL         | 2021 |
@@ -315,26 +321,26 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | BiGI                                         |  Heterogeneous   |        Contrastive/C-G        |           Edge Perturbation<br/>Ego-nets Sampling            |                     JS Estimator                      |        JL         | 2021 |
 | HTC                                          |    Attributed    |        Contrastive/C-G        |                     Attribute Shuffling                      |             SP Estimator<br/>DV Estimator             |        URL        | 2021 |
 | Node&nbsp;Property&nbsp;Prediction           |    Attributed    | Predictive/Node&nbsp;Property |                             None                             |                          MAE                          |      P\&F/JL      | 2020 |
-| S2GRL                                        |    Attributed    |   Predictive/Context-based    |                             None                             |                          CE                           |        URL        | 2020 |
-| PairwiseDistance                             |    Attributed    |   Predictive/Context-based    |                             None                             |                          CE                           |      P\&F/JL      | 2020 |
+| S2GRL                                        |    Attributed    |   Predictive/Context-based    |                             None                             |                          Cross Entropy                           |        URL        | 2020 |
+| PairwiseDistance                             |    Attributed    |   Predictive/Context-based    |                             None                             |                          Cross Entropy                           |      P\&F/JL      | 2020 |
 | PairwiseAttrSim                              |    Attributed    |   Predictive/Context-based    |                             None                             |                          MAE                          |      P\&F/JL      | 2020 |
 | Distance2Cluster                             |    Attributed    |   Predictive/Context-based    |                             None                             |                          MAE                          |      P\&F/JL      | 2020 |
-| EdgeMask                                     |    Attributed    |   Predictive/Context-based    |                             None                             |                          CE                           |      P\&F/JL      | 2020 |
-| TopoTER                                      |    Attributed    |   Predictive/Context-based    |                      Edge Perturbation                       |                          CE                           |        URL        | 2021 |
-| Centrality Score Ranking                     |    Attributed    |   Predictive/Context-based    |                             None                             |                          CE                           |       P\&F        | 2019 |
-| Meta-path prediction                         |  Heterogeneous   |   Predictive/Context-based    |                             None                             |                          CE                           |        JL         | 2020 |
-| SLiCE                                        |  Heterogeneous   |   Predictive/Context-based    |                             None                             |                          CE                           |       P\&F        | 2020 |
+| EdgeMask                                     |    Attributed    |   Predictive/Context-based    |                             None                             |                          Cross Entropy                           |      P\&F/JL      | 2020 |
+| TopoTER                                      |    Attributed    |   Predictive/Context-based    |                      Edge Perturbation                       |                          Cross Entropy                           |        URL        | 2021 |
+| Centrality Score Ranking                     |    Attributed    |   Predictive/Context-based    |                             None                             |                          Cross Entropy                           |       P\&F        | 2019 |
+| Meta-path prediction                         |  Heterogeneous   |   Predictive/Context-based    |                             None                             |                          Cross Entropy                           |        JL         | 2020 |
+| SLiCE                                        |  Heterogeneous   |   Predictive/Context-based    |                             None                             |                          Cross Entropy                           |       P\&F        | 2020 |
 | Distance2Labeled                             |    Attributed    |   Predictive/Context-based    |                             None                             |                          MAE                          |      P\&F/JL      | 2020 |
 | ContextLabel                                 |    Attributed    |   Predictive/Context-based    |                             None                             |                          MAE                          |      P\&F/JL      | 2020 |
-| HCM                                          |    Attributed    |   Predictive/Context-based    |                      Edge Perturbation                       |                Bayesian&nbsp;inference                |        URL        | 2021 |
-| Contextual Molecular<br/>Property Prediction |    Attributed    |    Predictive/Domain-based    |                             None                             |                          CE                           |       P\&F        | 2020 |
-| Graph-level Motif Prediction                 |    Attributed    |    Predictive/Domain-based    |                             None                             |                          CE                           |       P\&F        | 2020 |
+| HCM                                          |    Attributed    |   Predictive/Context-based    |                      Edge Perturbation                       |                Bayesian&nbsp;Inference                |        URL        | 2021 |
+| Contextual Molecular<br/>Property Prediction |    Attributed    |    Predictive/Domain-based    |                             None                             |                          Cross Entropy                           |       P\&F        | 2020 |
+| Graph-level Motif Prediction                 |    Attributed    |    Predictive/Domain-based    |                             None                             |                          Cross Entropy                           |       P\&F        | 2020 |
 | Multi-stage Self-training                    |    Attributed    |   Predictive/Self-training    |                             None                             |                         None                          |        JL         | 2018 |
 | Node Clustering                              |    Attributed    |   Predictive/Self-training    |                             None                             |                      Clustering                       |      P\&F/JL      | 2020 |
-| Graph Partitioning                           |    Attributed    |   Predictive/Self-training    |                             None                             |                     Partitioning                      |      P\&F/JL      | 2020 |
+| Graph Partitioning                           |    Attributed    |   Predictive/Self-training    |                             None                             |                     Graph Partitioning                      |      P\&F/JL      | 2020 |
 | CAGAN                                        |    Attributed    |   Predictive/Self-training    |                             None                             |                      Clustering                       |        URL        | 2020 |
 | M3S                                          |    Attributed    |   Predictive/Self-training    |                             None                             |                      Clustering                       |        JL         | 2020 |
-| Cluster Preserving                           |    Attributed    |   Predictive/Self-training    |                             None                             |                     Clustering/CE                     |       P\&F        | 2019 |
+| Cluster Preserving                           |    Attributed    |   Predictive/Self-training    |                             None                             |                     Cross Entropy                     |       P\&F        | 2019 |
 
 ## A Summary of Implementation Details
 
@@ -359,12 +365,14 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 | GRACE                                        |      Node       | Node Classification (Acc, Micro-F1)                          |          Cora, Citeseer, Pubmed, DBLP, Reddit, PPI           |
 | GCA                                          |      Node       | Node Classification (Acc)                                    | Wiki-CS, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
 | GROC                                         |      Node       | Node Classification (Acc)                                    |        Cora, Citeseer, Pubmed, Amazon-Photo, Wiki-CS         |
+| SEPT                                         |      Node/Link       | -                                    |        Last-FM, Douban, Yelp       |
 | STDGI                                        |      Node       | Node&nbsp;Regression&nbsp;(MAE,&nbsp;RMSE,&nbsp;MAPE)        |                           METR-LA                            |
 | GMI                                          |    Node/Link    | Node Classification (Acc, Micro-F1)<br/>Link Prediction (ROC-AUC) |   Cora, Citeseer, PubMed, Reddit, PPI, BlogCatalog, Flickr   |
 | KS2L                                         |    Node/Link    | Node Classification (Acc)<br/>Link Prediction (ROC-AUC)      | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS |
 | CG3                                          |      Node       | Node Classification (Acc)                                    | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS |
 | BGRL                                         |      Node       | Node Classification (Acc, Micro-F1)                          | Wiki-CS, Amazon-Computers, Amazon-Photo, PPI, Coauthor-CS, Coauthor-Physics, ogbn-arxiv |
 | SelfGNN                                      |      Node       | Node Classification (Acc)                                    | Cora, Citeseer, Pubmed, Amazon-Computers, Amazon-Photo, Coauthor-CS, Coauthor-Physics |
+| HeCo                                         |      Node       | Node Classification<br/>(ROC-AUC, Micro-F1, Macro-F1)<br/>Node Clustering (NMI, ARI)                                    |        ACM, DBLP, Freebase, AMiner         |
 | PT-DGNN                                      |      Link       | Link Prediction (ROC-AUC)                                    |               HepPh, Math Overflow, Super User               |
 | COAD                                         |    Node/Link    | Node Clustering<br/>(Precision, Recall, F1-score)<br/>Link Prediction (HitRatio@K, MRR) |                    AMiner, News, LinkedIn                    |
 | Contrast-Reg                                 |    Node/Link    | Node Classification (Acc)<br/>Node Clustering<br/>(NMI, Acc, Macro-F1)<br/>Link Prediction (ROC-AUC) | Cora, Citeseer, Pubmed, Reddit, ogbn-arxiv,  Wikipedia, ogbn-products, Amazo-Computers, Amazo-Photo |
@@ -435,7 +443,6 @@ About category, graph number, node number per graph, edge number per graph, dime
 |     PROTEINS     | Protein Networks  |  1113   |     39.06     |     72.81     |     4     |    2    |
 |       NCI1       |  Molecule Graphs  |  4110   |     29.87     |     32.30     |    37     |    2    |
 |      MUTAG       |  Molecule Graphs  |   188   |     17.93     |     19.79     |     7     |    2    |
-|       PTC        |  Molecule Graphs  |   344   |     25.50     |       -       |    19     |    2    |
 |  QM9 (QM7, QM8)  |  Molecule Graphs  | 133885  |       -       |       -       |     -     |    -    |
 |       BBBP       |  Molecule Graphs  |  2039   |     24.05     |     25.94     |     -     |    2    |
 |      Tox21       |  Molecule Graphs  |  7831   |     18.51     |     25.94     |     -     |   12    |
@@ -445,7 +452,7 @@ About category, graph number, node number per graph, edge number per graph, dime
 |       HIV        |  Molecule Graphs  |  41127  |     25.53     |     27.48     |     -     |    2    |
 |      SIDER       |  Molecule Graphs  |  1427   |     33.64     |     35.36     |     -     |   27    |
 |       BACE       |  Molecule Graphs  |  1513   |     34.12     |     36.89     |     -     |    2    |
-|     PTC\_MR      |  Molecule Graphs  |   344   |     14.29     |     14.69     |     -     |    2    |
+|     PTC      |  Molecule Graphs  |   344   |     14.29     |     14.69     |     19     |    2    |
 |      NCI109      |  Molecule Graphs  |  4127   |     29.68     |     32.13     |     -     |    2    |
 |   Mutagenicity   |  Molecule Graphs  |  4337   |     30.32     |     30.77     |     -     |    2    |
 |      MNIST       |  Others (Image)   |    -    |     70000     |       -       |    784    |   10    |
@@ -478,12 +485,14 @@ About category, graph number, node number per graph, edge number per graph, dime
 | GRACE                                    | https://github.com/CRIPAC-DIG/GRACE                          |
 | GCA                                      | https://github.com/CRIPAC-DIG/GCA                            |
 | GROC                                     | N.A.                                                         |
+| SEPT                                     | https://github.com/Coder-Yu/QRec                             |
 | STDGI                                    | N.A.                                                         |
 | GMI                                      | https://github.com/zpeng27/GMI                               |
 | KS2L                                     | N.A.                                                         |
 | CG3                                      | N.A.                                                         |
 | BGRL                                     | N.A.                                                         |
 | SelfGNN                                  | https://github.com/zekarias-tilahun/SelfGNN                  |
+| HeCo                                     | https://github.com/liun-online/HeCo                  |
 | PT-DGNN                                  | https://github.com/Mobzhang/PT-DGNN                          |
 | COAD                                     | https://github.com/allanchen95/Expert-Linking                |
 | Contrast-Reg                             | N.A.                                                         |
@@ -492,7 +501,7 @@ About category, graph number, node number per graph, edge number per graph, dime
 | HDMI                                     | N.A.                                                         |
 | DMGI                                     | https://github.com/pcy1302/DMGI                              |
 | MVGRL                                    | https://github.com/kavehhassani/mvgrl                        |
-| HIGI                                     | https://github.com/YuxiangRen/Heterogeneous-Deep-Graph-Infomax |
+| HDGI                                     | https://github.com/YuxiangRen/Heterogeneous-Deep-Graph-Infomax |
 | Subg-Con                                 | https://github.com/yzjiao/Subg-Con                           |
 | Cotext Prediction                        | http://snap.stanford.edu/gnn-pretrain                        |
 | GIC                                      | https://github.com/cmavro/Graph-InfoClust-GIC                |
