@@ -472,82 +472,80 @@ About category, graph number, node number per graph, edge number per graph, dime
 
 ## A Summary of Open-source Codes
 
-| Methods                                                      | Github                                                       |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
-| Graph Completion                                             | https://github.com/Shen-Lab/SS-GCNs                          |
-| Node Attribute Masking                                       | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| Edge Attribute Masking                                       | http://snap.stanford.edu/gnn-pretrain                        |
-| Attribute and Embedding Denoising                            | N.A.                                                         |
-| Adjacency Matrix Reconstruction                              | N.A.                                                         |
-| Graph Bert                                                   | https://github.com/anonymous-sourcecode/Graph-Bert           |
-| Pretrain-Recsys                                              | https://github.com/jerryhao66/Pretrain-Recsys                |
-| SLAPS                                                        | https://github.com/BorealisAI/SLAPS-GNN                      |
-| G-BERT                                                       | https://github.com/jshang123/G-Bert                          |
-| GPT-GNN                                                      | https://github.com/acbull/GPT-GNN                            |
-| GraphCL                                                      | https://github.com/Shen-Lab/GraphCL                          |
-| IGSD                                                         | N.A.                                                         |
-| DACL                                                         | N.A.                                                         |
-| LCC                                                          | https://github.com/YuxiangRen                                |
-| CCGL                                                         | https://github.com/Xovee/ccgl                                |
-| CSSL                                                         | N.A.                                                         |
-| GCC                                                          | https://github.com/THUDM/GCC                                 |
-| GRACE                                                        | https://github.com/CRIPAC-DIG/GRACE                          |
-| GCA                                                          | https://github.com/CRIPAC-DIG/GCA                            |
-| GROC                                                         | N.A.                                                         |
-| SEPT                                                         | https://github.com/Coder-Yu/QRec                             |
-| STDGI                                                        | N.A.                                                         |
-| GMI                                                          | https://github.com/zpeng27/GMI                               |
-| KS2L                                                         | N.A.                                                         |
-| CG3                                                          | N.A.                                                         |
-| BGRL                                                         | N.A.                                                         |
-| SelfGNN                                                      | https://github.com/zekarias-tilahun/SelfGNN                  |
-| HeCo                                                         | https://github.com/liun-online/HeCo                          |
-| PT-DGNN                                                      | https://github.com/Mobzhang/PT-DGNN                          |
-| COAD                                                         | https://github.com/allanchen95/Expert-Linking                |
-| Contrast-Reg                                                 | N.A.                                                         |
-| C-SWM                                                        | https://github.com/tkipf/c-swm                               |
-| DGI                                                          | https://github.com/PetarV-/DGI                               |
-| HDMI                                                         | N.A.                                                         |
-| DMGI                                                         | https://github.com/pcy1302/DMGI                              |
-| MVGRL                                                        | https://github.com/kavehhassani/mvgrl                        |
-| HDGI                                                         | https://github.com/YuxiangRen/Heterogeneous-Deep-Graph-Infomax |
-| Subg-Con                                                     | https://github.com/yzjiao/Subg-Con                           |
-| Cotext Prediction                                            | http://snap.stanford.edu/gnn-pretrain                        |
-| GIC                                                          | https://github.com/cmavro/Graph-InfoClust-GIC                |
-| GraphLoG                                                     | https://openreview.net/forum?id=DAaaaqPv9-q                  |
-| MHCN                                                         | https://github.com/Coder-Yu/RecQ                             |
-| EGI                                                          | https://openreview.net/forum?id=J_pvI6ap5Mn                  |
-| MICRO-Graph                                                  | https://drive.google.com/file/d/1b751rpnV-SDmUJvKZZI-AvpfEa9eHxo9/ |
-| InfoGraph                                                    | https://github.com/fanyun-sun/InfoGraph                      |
-| SUGAR                                                        | https://github.com/RingBDStack/SUGAR                         |
-| BiGI                                                         | https://github.com/clhchtcjj/BiNE                            |
-| HTC                                                          | N.A.                                                         |
-| DITNET                                                       | https://github.com/FangpingWan/NeoDTI                        |
-| Node Property Prediction                                     | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| S2GRL                                                        | N.A.                                                         |
-| PairwiseDistance                                             | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| PairwiseAttrSim                                              | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| Distance2Cluster                                             | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| EdgeMask                                                     | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| TopoTER                                                      | N.A.                                                         |
-| Centrality Score Ranking                                     | N.A.                                                         |
-| Meta-path prediction                                         | https://github.com/mlvlab/SELAR                              |
-| SLiCE                                                        | https://github.com/pnnl/SLICE                                |
-| Distance2Labeled                                             | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| ContextLabel                                                 | https://github.com/ChandlerBang/SelfTask-GNN                 |
-| HCM                                                          | N.A.                                                         |
-| Contextual Molecular Property Prediction                     | https://github.com/tencent-ailab/grover                      |
-| Graph-level Motif Prediction                                 | https://github.com/tencent-ailab/grover                      |
-| DrRepair                                                     | https://github.com/michiyasunaga/DrRepair                    |
-| Multi-stage Self-training                                    | https://github.com/Davidham3/deeper_insights_into_GCNs       |
-| Node Clustering                                              | https://github.com/Shen-Lab/SS-GCNs                          |
-| Graph Partitioning                                           | https://github.com/Shen-Lab/SS-GCNs                          |
-| CAGAN                                                        | N.A.                                                         |
-| M3S                                                          | https://github.com/datake/M3S                                |
-| Cluster Preserving                                           | N.A.                                                         |
-| SEF                                                          | https://github.com/nealgravindra/self-supervsed_edge_feats   |
-| ## Contribute                                                |                                                              |
-| If you would like to help contribute this list, please feel free to contact me or add [pull request](https://github.com/LirongWu/awesome-graph-self-supervised-learning/pulls) with the following Markdown format: |                                                              |
+| Methods                                  | Github                                                       |
+| :--------------------------------------- | :----------------------------------------------------------- |
+| Graph Completion                         | https://github.com/Shen-Lab/SS-GCNs                          |
+| Node Attribute Masking                   | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| Edge Attribute Masking                   | http://snap.stanford.edu/gnn-pretrain                        |
+| Attribute and Embedding Denoising        | N.A.                                                         |
+| Adjacency Matrix Reconstruction          | N.A.                                                         |
+| Graph Bert                               | https://github.com/anonymous-sourcecode/Graph-Bert           |
+| Pretrain-Recsys                          | https://github.com/jerryhao66/Pretrain-Recsys                |
+| SLAPS                                    | https://github.com/BorealisAI/SLAPS-GNN                      |
+| G-BERT                                   | https://github.com/jshang123/G-Bert                          |
+| GPT-GNN                                  | https://github.com/acbull/GPT-GNN                            |
+| GraphCL                                  | https://github.com/Shen-Lab/GraphCL                          |
+| IGSD                                     | N.A.                                                         |
+| DACL                                     | N.A.                                                         |
+| LCC                                      | https://github.com/YuxiangRen                                |
+| CCGL                                     | https://github.com/Xovee/ccgl                                |
+| CSSL                                     | N.A.                                                         |
+| GCC                                      | https://github.com/THUDM/GCC                                 |
+| GRACE                                    | https://github.com/CRIPAC-DIG/GRACE                          |
+| GCA                                      | https://github.com/CRIPAC-DIG/GCA                            |
+| GROC                                     | N.A.                                                         |
+| SEPT                                     | https://github.com/Coder-Yu/QRec                             |
+| STDGI                                    | N.A.                                                         |
+| GMI                                      | https://github.com/zpeng27/GMI                               |
+| KS2L                                     | N.A.                                                         |
+| CG3                                      | N.A.                                                         |
+| BGRL                                     | N.A.                                                         |
+| SelfGNN                                  | https://github.com/zekarias-tilahun/SelfGNN                  |
+| HeCo                                     | https://github.com/liun-online/HeCo                          |
+| PT-DGNN                                  | https://github.com/Mobzhang/PT-DGNN                          |
+| COAD                                     | https://github.com/allanchen95/Expert-Linking                |
+| Contrast-Reg                             | N.A.                                                         |
+| C-SWM                                    | https://github.com/tkipf/c-swm                               |
+| DGI                                      | https://github.com/PetarV-/DGI                               |
+| HDMI                                     | N.A.                                                         |
+| DMGI                                     | https://github.com/pcy1302/DMGI                              |
+| MVGRL                                    | https://github.com/kavehhassani/mvgrl                        |
+| HDGI                                     | https://github.com/YuxiangRen/Heterogeneous-Deep-Graph-Infomax |
+| Subg-Con                                 | https://github.com/yzjiao/Subg-Con                           |
+| Cotext Prediction                        | http://snap.stanford.edu/gnn-pretrain                        |
+| GIC                                      | https://github.com/cmavro/Graph-InfoClust-GIC                |
+| GraphLoG                                 | https://openreview.net/forum?id=DAaaaqPv9-q                  |
+| MHCN                                     | https://github.com/Coder-Yu/RecQ                             |
+| EGI                                      | https://openreview.net/forum?id=J_pvI6ap5Mn                  |
+| MICRO-Graph                              | https://drive.google.com/file/d/1b751rpnV-SDmUJvKZZI-AvpfEa9eHxo9/ |
+| InfoGraph                                | https://github.com/fanyun-sun/InfoGraph                      |
+| SUGAR                                    | https://github.com/RingBDStack/SUGAR                         |
+| BiGI                                     | https://github.com/clhchtcjj/BiNE                            |
+| HTC                                      | N.A.                                                         |
+| DITNET                                   | https://github.com/FangpingWan/NeoDTI                        |
+| Node Property Prediction                 | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| S2GRL                                    | N.A.                                                         |
+| PairwiseDistance                         | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| PairwiseAttrSim                          | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| Distance2Cluster                         | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| EdgeMask                                 | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| TopoTER                                  | N.A.                                                         |
+| Centrality Score Ranking                 | N.A.                                                         |
+| Meta-path prediction                     | https://github.com/mlvlab/SELAR                              |
+| SLiCE                                    | https://github.com/pnnl/SLICE                                |
+| Distance2Labeled                         | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| ContextLabel                             | https://github.com/ChandlerBang/SelfTask-GNN                 |
+| HCM                                      | N.A.                                                         |
+| Contextual Molecular Property Prediction | https://github.com/tencent-ailab/grover                      |
+| Graph-level Motif Prediction             | https://github.com/tencent-ailab/grover                      |
+| DrRepair                                 | https://github.com/michiyasunaga/DrRepair                    |
+| Multi-stage Self-training                | https://github.com/Davidham3/deeper_insights_into_GCNs       |
+| Node Clustering                          | https://github.com/Shen-Lab/SS-GCNs                          |
+| Graph Partitioning                       | https://github.com/Shen-Lab/SS-GCNs                          |
+| CAGAN                                    | N.A.                                                         |
+| M3S                                      | https://github.com/datake/M3S                                |
+| Cluster Preserving                       | N.A.                                                         |
+| SEF                                      | https://github.com/nealgravindra/self-supervsed_edge_feats   |
 
 
 ## Contribute
