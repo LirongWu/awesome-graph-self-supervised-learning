@@ -81,6 +81,8 @@ A general framework for contrastive learning is shown below. The two contrasting
   - V. Verma, M.-T. Luong, K. Kawaguchi, H. Pham, andQ. V. Le. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2011.04419.pdf)
 - LCC: Label Contrastive Coding Based Graph Neural Network for Graph Classification.
   - Y. Ren, J. Bai, and J. Zhang. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2101.05486.pdf) [[code]](https://github.com/YuxiangRen/Label-Contrastive-Coding-based-Graph-Neural-Network-for-Graph-Classification-)
+- CCGL: Contrastive Cascade Graph Learning. 
+  - X. Xu, F. Zhou, K. Zhang, and S. Liu. *arXiv 2021*. [[pdf]](https://arxiv.org/pdf/2107.12576) [[code]](https://github.com/Xovee/ccgl)
 - CSSL: Contrastive Self-Supervised Learning for Graph Classification.
   - J. Zeng and P. Xie. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.05923.pdf)
 
@@ -289,6 +291,7 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 | DACL                                         |    Attributed    |        Contrastive/G-G        |                            Mixup                             |                        InfoNCE                        |        URL        | 2020 |
 | LCC                                          |    Attributed    |        Contrastive/G-G        |                             None                             |                        InfoNCE                        |        JL         | 2021 |
 | CSSL                                         |    Attributed    |        Contrastive/G-G        |   NodeInsertion<br/>Edge Perturbation<br/>Uniform Sampling   |                        InfoNCE                        |    P\&F/JL/URL    | 2020 |
+| CCGL                                         |    Attributed    |        Contrastive/G-G        |                  Information Re-Diffusion                    |                        InfoNCE                        |       P\&F        | 2021 |
 | GCC                                          |   Unattributed   |        Contrastive/C-C        |                Random&nbsp;Walk&nbsp;Sampling                |                        InfoNCE                        |     P\&F/URL      | 2020 |
 | GRACE                                        |    Attributed    |        Contrastive/L-L        |           Attribute Masking<br/>Edge Perturbation            |                        InfoNCE                        |        URL        | 2020 |
 | GCA                                          |    Attributed    |        Contrastive/L-L        |                       Attention-based                        |                        InfoNCE                        |        URL        | 2020 |
@@ -413,6 +416,7 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 | CAGAN                                        |      Node       | Node Classfication<br/>(Micro-F1, Macro-F1)<br/>Node Clustering<br/>(Micro-F1, Macro-F1, NMI) |                    Cora, Citeseer, Pubmed                    |
 | M3S                                          |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | Cluster Preserving                           | Node/Link/Graph | Node Classification (Micro-F1)<br/>Link Prediction (Micro-F1)<br/>Graph Classification (Micro-F1) |         Cora, Pubmed, ML-100K, ML-1M, IMDB-M, IMDB-B         |
+| CCGL                                         |      Graph      | Cascade Graph Prediction (MSLE)                              |             Weibo, Twitter, ACM, APS, DBLP                   |
 
 ## A Summary of Common Graph Datasets
 
@@ -537,6 +541,7 @@ About category, graph number, node number per graph, edge number per graph, dime
 | M3S                                      | https://github.com/datake/M3S                                |
 | Cluster Preserving                       | N.A.                                                         |
 | SEF                                      | https://github.com/nealgravindra/self-supervsed_edge_feats   |
+| CCGL                                     | https://github.com/Xovee/ccgl                                |
 ## Contribute
 If you would like to help contribute this list, please feel free to contact me or add [pull request](https://github.com/LirongWu/awesome-graph-self-supervised-learning/pulls) with the following Markdown format:
 
