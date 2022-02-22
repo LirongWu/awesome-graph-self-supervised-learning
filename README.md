@@ -82,7 +82,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - LCC: Label Contrastive Coding Based Graph Neural Network for Graph Classification.
   - Y. Ren, J. Bai, and J. Zhang. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2101.05486.pdf) [[code]](https://github.com/YuxiangRen/Label-Contrastive-Coding-based-Graph-Neural-Network-for-Graph-Classification-)
 - CCGL: Contrastive Cascade Graph Learning. 
-  - X. Xu, F. Zhou, K. Zhang, and S. Liu. *arXiv 2021*. [[pdf]](https://arxiv.org/pdf/2107.12576) [[code]](https://github.com/Xovee/ccgl)
+  - X. Xu, F. Zhou, K. Zhang, and S. Liu. *TKDE 2022*. [[pdf]](https://arxiv.org/pdf/2107.12576) [[code]](https://github.com/Xovee/ccgl)
 - CSSL: Contrastive Self-Supervised Learning for Graph Classification.
   - J. Zeng and P. Xie. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.05923.pdf)
 
