@@ -170,7 +170,8 @@ A general framework for contrastive learning is shown below. The two contrasting
 ## Generative Learning
 
 ####  Graph Autoencoding
-
+- GraphMAE: Self-supervised Masked Graph Autoencoders
+  - Z. Hou, X. Liu, Y. Cen, Y. Dong, H. Yang, C. Wang, and J. Tang. *KDD 2022* [[pdf]](https://arxiv.org/pdf/2205.10803.pdf) [[code]](https://github.com/THUDM/GraphMAE)
 - Graph Completion: When Does Self-Supervision Help Graph Convolutional Networks?
   - Y. You, T. Chen, Z. Wang, and Y. Shen. *PMLR 2020*. [[pdf]](http://proceedings.mlr.press/v119/you20a/you20a.pdf) [[code]](https://github.com/Shen-Lab/SS-GCNs)
 - Node Attribute Masking: Self-Supervised Learning on Graphs: Deep Insights and New Direction.
