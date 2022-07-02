@@ -110,7 +110,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - CG3: Contrastive and Generative Graph Convolutional Networks for Graph-based Semi-Supervised Learning.
   - S. Wan, S. Pan, J. Yang, and C. Gong. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.07111.pdf)
 - BGRL: Bootstrapped Representation Learning on Graphs.
-  - S. Thakoor, C. Tallec, M. G. Azar, R. Munos, P. Veliˇckovi´c, and M. Valko. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.06514.pdf)[[code]](https://github.com/nerdslab/bgrl)
+  - S. Thakoor, C. Tallec, M. G. Azar, R. Munos, P. Veliˇckovi´c, and M. Valko. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.06514.pdf)[[code]]
 - SelfGNN: Self-supervised Graph Neural Networks without Explicit Negative Sampling.
   - Z. T. Kefato and S. Girdzijauskas. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2103.14958.pdf) [[code]](https://github.com/zekarias-tilahun/SelfGNN)
 - HeCo: Self-supervised Heterogeneous Graph Neural Network with Co-contrastive Learning.
