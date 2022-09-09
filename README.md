@@ -82,7 +82,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - LCC: Label Contrastive Coding Based Graph Neural Network for Graph Classification.
   - Y. Ren, J. Bai, and J. Zhang. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2101.05486.pdf) [[code]](https://github.com/YuxiangRen/Label-Contrastive-Coding-based-Graph-Neural-Network-for-Graph-Classification-)
 - CCGL: Contrastive Cascade Graph Learning. 
-  - X. Xu, F. Zhou, K. Zhang, and S. Liu. *arXiv 2021*. [[pdf]](https://arxiv.org/pdf/2107.12576) [[code]](https://github.com/Xovee/ccgl)
+  - X. Xu, F. Zhou, K. Zhang, and S. Liu. *TKDE 2022*. [[pdf]](https://arxiv.org/pdf/2107.12576) [[code]](https://github.com/Xovee/ccgl)
 - CSSL: Contrastive Self-Supervised Learning for Graph Classification.
   - J. Zeng and P. Xie. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.05923.pdf)
 
@@ -110,7 +110,7 @@ A general framework for contrastive learning is shown below. The two contrasting
 - CG3: Contrastive and Generative Graph Convolutional Networks for Graph-based Semi-Supervised Learning.
   - S. Wan, S. Pan, J. Yang, and C. Gong. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.07111.pdf)
 - BGRL: Bootstrapped Representation Learning on Graphs.
-  - S. Thakoor, C. Tallec, M. G. Azar, R. Munos, P. Veliˇckovi´c, and M. Valko. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.06514.pdf)
+  - S. Thakoor, C. Tallec, M. G. Azar, R. Munos, P. Veliˇckovi´c, and M. Valko. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2102.06514.pdf)[[code]](https://github.com/nerdslab/bgrl)
 - SelfGNN: Self-supervised Graph Neural Networks without Explicit Negative Sampling.
   - Z. T. Kefato and S. Girdzijauskas. *Arxiv 2021*. [[pdf]](https://arxiv.org/pdf/2103.14958.pdf) [[code]](https://github.com/zekarias-tilahun/SelfGNN)
 - HeCo: Self-supervised Heterogeneous Graph Neural Network with Co-contrastive Learning.
@@ -170,7 +170,8 @@ A general framework for contrastive learning is shown below. The two contrasting
 ## Generative Learning
 
 ####  Graph Autoencoding
-
+- GraphMAE: Self-supervised Masked Graph Autoencoders
+  - Z. Hou, X. Liu, Y. Cen, Y. Dong, H. Yang, C. Wang, and J. Tang. *KDD 2022* [[pdf]](https://arxiv.org/pdf/2205.10803.pdf) [[code]](https://github.com/THUDM/GraphMAE)
 - Graph Completion: When Does Self-Supervision Help Graph Convolutional Networks?
   - Y. You, T. Chen, Z. Wang, and Y. Shen. *PMLR 2020*. [[pdf]](http://proceedings.mlr.press/v119/you20a/you20a.pdf) [[code]](https://github.com/Shen-Lab/SS-GCNs)
 - Node Attribute Masking: Self-Supervised Learning on Graphs: Deep Insights and New Direction.
