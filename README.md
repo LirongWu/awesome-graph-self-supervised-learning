@@ -1,6 +1,6 @@
 # Awesome Graph Self-Supervised Learning
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/LirongWu/awesome-graph-self-supervised-learning?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/LirongWu/awesome-graph-self-supervised-learning?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=LirongWu.awesome-graph-self-supervised-learning)
+![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green)[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/LirongWu/awesome-graph-self-supervised-learning?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/LirongWu/awesome-graph-self-supervised-learning?color=blue&label=Fork)
 
 A curated list for awesome self-supervised graph representation learning resources. Inspired by [awesome-deep-vision](https://github.com/kjw0612/awesome-deep-vision), [awesome-adversarial-machine-learning](https://github.com/yenchenlin/awesome-adversarial-machine-learning), [awesome-deep-learning-papers](https://github.com/terryum/awesome-deep-learning-papers), [awesome-architecture-search](https://github.com/markdtw/awesome-architecture-search), and [awesome-self-supervised-learning](https://github.com/jason718/awesome-self-supervised-learning).
 
