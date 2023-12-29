@@ -93,6 +93,8 @@ A general framework for contrastive learning is shown below. The two contrasting
 
 #### Local-Local Contrasting
 
+- CDNMF: Contrastive Deep Nonnegative Matrix Factorization for Community Detection.
+  - Y. Li, J. Chen, C. Chen, L. Yang, Z. Zheng. *ICASSP 2024*. [[pdf]](https://arxiv.org/abs/2311.02357) [[code]](https://github.com/6lyc/CDNMF)
 - GRACE: Deep Graph Contrastive Representation Learning.
   - Y. Zhu, Y. Xu, F. Yu, Q. Liu, S. Wu, and L. Wang. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2006.04131.pdf) [[code]](https://github.com/CRIPAC-DIG/GRACE)
 - GCA: Graph Contrastive Learning with Adaptive Augmentation.
@@ -139,6 +141,8 @@ A general framework for contrastive learning is shown below. The two contrasting
 
 #### Local-Context Contrasting
 
+- CDNMF: Contrastive Deep Nonnegative Matrix Factorization for Community Detection.
+  - Y. Li, J. Chen, C. Chen, L. Yang, Z. Zheng. *ICASSP 2024*. [[pdf]](https://arxiv.org/abs/2311.02357) [[code]](https://github.com/6lyc/CDNMF)
 - Subg-Con: Sub-graph Contrast for Scalable Self-Supervised Graph Representation Learning.
   - Y. Jiao, Y. Xiong, J. Zhang, Y. Zhang, T. Zhang, and Y. Zhu. *Arxiv 2020*. [[pdf]](https://arxiv.org/pdf/2009.10273.pdf) [[code]](https://github.com/yzjiao/Subg-Con)
 - Cotext Prediction: Strategies for Pre-training Graph Neural Networks.
@@ -170,6 +174,8 @@ A general framework for contrastive learning is shown below. The two contrasting
 ## Generative Learning
 
 ####  Graph Autoencoding
+- CDNMF: Contrastive Deep Nonnegative Matrix Factorization for Community Detection.
+  - Y. Li, J. Chen, C. Chen, L. Yang, Z. Zheng. *ICASSP 2024*. [[pdf]](https://arxiv.org/abs/2311.02357) [[code]](https://github.com/6lyc/CDNMF)
 - GraphMAE: Self-supervised Masked Graph Autoencoders
   - Z. Hou, X. Liu, Y. Cen, Y. Dong, H. Yang, C. Wang, and J. Tang. *KDD 2022* [[pdf]](https://arxiv.org/pdf/2205.10803.pdf) [[code]](https://github.com/THUDM/GraphMAE)
 - Graph Completion: When Does Self-Supervision Help Graph Convolutional Networks?
