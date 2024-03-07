@@ -285,6 +285,7 @@ About Graph Property, Pretext Task, Data Augmentation, Objective Function, Train
 
 | Methods                                      |  Graph Property  |         Pretext-Task          |                      Data Augmentation                       |                  Objective Function                   | Training Strategy | Year |
 | :------------------------------------------- | :--------------: | :---------------------------: | :----------------------------------------------------------: | :---------------------------------------------------: | :---------------: | :--: |
+| CDNMF                             |    Attributed    |         Contrastive/L-C + Generative/AE        |                      None                       |                          InfoNCE + AE                          |      URL      | 2024 |
 | Graph Completion                             |    Attributed    |         Generative/AE         |                      Attribute Masking                       |                          MAE                          |      P\&F/JL      | 2020 |
 | Node Attribute Masking                       |    Attributed    |         Generative/AE         |                      Attribute Masking                       |                          MAE                          |      P\&F/JL      | 2020 |
 | Edge Attribute Masking                       |    Attributed    |         Generative/AE         |                      Attribute Masking                       |                          MAE                          |       P\&F        | 2019 |
@@ -362,6 +363,7 @@ About Task Level, Evaluation Metric, and Evaluation Datasets.
 
 | Methods                                      |   Task Level    | Evaluation Metric                                            |                           Dataset                            |
 | :------------------------------------------- | :-------------: | :----------------------------------------------------------- | :----------------------------------------------------------: |
+| CDNMF                                        |      Node       | Node Clustering (Acc, NMI)                                   |                    Cora, Citeseer, Pubmed                    |
 | Graph Completion                             |      Node       | Node Classification (Acc)                                    |                    Cora, Citeseer, Pubmed                    |
 | Node Attribute Masking                       |      Node       | Node Classification (Acc)                                    |                Cora, Citeseer, Pubmed, Reddit                |
 | Edge Attribute Masking                       |      Graph      | Graph Classification (ROC-AUC)                               | MUTAG, PTC, PPI, BBBP, Tox21, ToxCast, ClinTox, MUV, HIV, SIDER, BACE |
@@ -481,6 +483,7 @@ About category, graph number, node number per graph, edge number per graph, dime
 
 | Methods                                  | Github                                                       |
 | :--------------------------------------- | :----------------------------------------------------------- |
+| CDNMF                                    | https://github.com/6lyc/CDNMF                                |
 | Graph Completion                         | https://github.com/Shen-Lab/SS-GCNs                          |
 | Node Attribute Masking                   | https://github.com/ChandlerBang/SelfTask-GNN                 |
 | Edge Attribute Masking                   | http://snap.stanford.edu/gnn-pretrain                        |
